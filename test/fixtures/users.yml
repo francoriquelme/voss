@@ -1,0 +1,43 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  apellido_paterno: MyString
+  apellido_materno: MyString
+  fecha_nacimiento: 2022-07-01
+  direccion: MyString
+  comuna: MyString
+  region: MyString
+  telefono: MyString
+  email: MyString
+  profesion_u_oficio: MyString
+  renta_mensual: MyString
+  rut: MyString
+  dv_rut_person: MyString
+  rut_empleador: MyString
+  dv_rut_emp: MyString
+  empleador: MyString
+  desafios_en_curso: MyString
+  estado_financiero: MyString
+  id_desafio: MyString
+
+two:
+  name: MyString
+  apellido_paterno: MyString
+  apellido_materno: MyString
+  fecha_nacimiento: 2022-07-01
+  direccion: MyString
+  comuna: MyString
+  region: MyString
+  telefono: MyString
+  email: MyString
+  profesion_u_oficio: MyString
+  renta_mensual: MyString
+  rut: MyString
+  dv_rut_person: MyString
+  rut_empleador: MyString
+  dv_rut_emp: MyString
+  empleador: MyString
+  desafios_en_curso: MyString
+  estado_financiero: MyString
+  id_desafio: MyString

@@ -1,0 +1,112 @@
+<%= form_with(model: user) do |form| %>
+  <% if user.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+        <% user.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :name, style: "display: block" %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :apellido_paterno, style: "display: block" %>
+    <%= form.text_field :apellido_paterno %>
+  </div>
+
+  <div>
+    <%= form.label :apellido_materno, style: "display: block" %>
+    <%= form.text_field :apellido_materno %>
+  </div>
+
+  <div>
+    <%= form.label :fecha_nacimiento, style: "display: block" %>
+    <%= form.date_field :fecha_nacimiento %>
+  </div>
+
+  <div>
+    <%= form.label :direccion, style: "display: block" %>
+    <%= form.text_field :direccion %>
+  </div>
+
+  <div>
+    <%= form.label :comuna, style: "display: block" %>
+    <%= form.text_field :comuna %>
+  </div>
+
+  <div>
+    <%= form.label :region, style: "display: block" %>
+    <%= form.text_field :region %>
+  </div>
+
+  <div>
+    <%= form.label :telefono, style: "display: block" %>
+    <%= form.text_field :telefono %>
+  </div>
+
+  <div>
+    <%= form.label :email, style: "display: block" %>
+    <%= form.text_field :email %>
+  </div>
+
+  <div>
+    <%= form.label :profesion_u_oficio, style: "display: block" %>
+    <%= form.text_field :profesion_u_oficio %>
+  </div>
+
+  <div>
+    <%= form.label :renta_mensual, style: "display: block" %>
+    <%= form.text_field :renta_mensual %>
+  </div>
+
+  <div>
+    <%= form.label :rut, style: "display: block" %>
+    <%= form.text_field :rut %>
+  </div>
+
+  <div>
+    <%= form.label :dv_rut_person, style: "display: block" %>
+    <%= form.text_field :dv_rut_person %>
+  </div>
+
+  <div>
+    <%= form.label :rut_empleador, style: "display: block" %>
+    <%= form.text_field :rut_empleador %>
+  </div>
+
+  <div>
+    <%= form.label :dv_rut_emp, style: "display: block" %>
+    <%= form.text_field :dv_rut_emp %>
+  </div>
+
+  <div>
+    <%= form.label :empleador, style: "display: block" %>
+    <%= form.text_field :empleador %>
+  </div>
+
+  <div>
+    <%= form.label :desafios_en_curso, style: "display: block" %>
+    <%= form.text_field :desafios_en_curso %>
+  </div>
+
+  <div>
+    <%= form.label :estado_financiero, style: "display: block" %>
+    <%= form.text_field :estado_financiero %>
+  </div>
+
+  <div>
+    <%= form.label :id_desafio, style: "display: block" %>
+    <%= form.text_field :id_desafio %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
