@@ -1,0 +1,2 @@
+class SocialCause < ApplicationRecord
+end

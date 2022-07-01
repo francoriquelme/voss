@@ -1,0 +1,82 @@
+<%= form_with(model: social_cause) do |form| %>
+  <% if social_cause.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(social_cause.errors.count, "error") %> prohibited this social_cause from being saved:</h2>
+
+      <ul>
+        <% social_cause.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :id_causa, style: "display: block" %>
+    <%= form.number_field :id_causa %>
+  </div>
+
+  <div>
+    <%= form.label :rut_beneficiario, style: "display: block" %>
+    <%= form.number_field :rut_beneficiario %>
+  </div>
+
+  <div>
+    <%= form.label :dv_rut_person, style: "display: block" %>
+    <%= form.text_field :dv_rut_person %>
+  </div>
+
+  <div>
+    <%= form.label :nombre_causa, style: "display: block" %>
+    <%= form.text_field :nombre_causa %>
+  </div>
+
+  <div>
+    <%= form.label :descripcion, style: "display: block" %>
+    <%= form.text_area :descripcion %>
+  </div>
+
+  <div>
+    <%= form.label :fundacion_u_ong_relacionada, style: "display: block" %>
+    <%= form.text_field :fundacion_u_ong_relacionada %>
+  </div>
+
+  <div>
+    <%= form.label :asesor_asignado, style: "display: block" %>
+    <%= form.text_field :asesor_asignado %>
+  </div>
+
+  <div>
+    <%= form.label :puntaje_causa, style: "display: block" %>
+    <%= form.number_field :puntaje_causa %>
+  </div>
+
+  <div>
+    <%= form.label :rut_beneficiario_causa, style: "display: block" %>
+    <%= form.number_field :rut_beneficiario_causa %>
+  </div>
+
+  <div>
+    <%= form.label :dv_rut_benef, style: "display: block" %>
+    <%= form.text_field :dv_rut_benef %>
+  </div>
+
+  <div>
+    <%= form.label :tipo_causa, style: "display: block" %>
+    <%= form.text_field :tipo_causa %>
+  </div>
+
+  <div>
+    <%= form.label :tamano_causa, style: "display: block" %>
+    <%= form.text_field :tamano_causa %>
+  </div>
+
+  <div>
+    <%= form.label :fecha_ingreso_causa, style: "display: block" %>
+    <%= form.date_field :fecha_ingreso_causa %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

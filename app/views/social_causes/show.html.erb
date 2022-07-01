@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @social_cause %>
+
+<div>
+  <%= link_to "Edit this social cause", edit_social_cause_path(@social_cause) %> |
+  <%= link_to "Back to social causes", social_causes_path %>
+
+  <%= button_to "Destroy this social cause", @social_cause, method: :delete %>
+</div>

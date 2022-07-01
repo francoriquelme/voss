@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Social causes</h1>
+
+<div id="social_causes">
+  <% @social_causes.each do |social_cause| %>
+    <%= render social_cause %>
+    <p>
+      <%= link_to "Show this social cause", social_cause %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New social cause", new_social_cause_path %>

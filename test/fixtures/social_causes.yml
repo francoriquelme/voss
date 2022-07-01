@@ -1,0 +1,31 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id_causa: 1
+  rut_beneficiario: 1
+  dv_rut_person: MyString
+  nombre_causa: MyString
+  descripcion: MyText
+  fundacion_u_ong_relacionada: MyString
+  asesor_asignado: MyString
+  puntaje_causa: 1
+  rut_beneficiario_causa: 1
+  dv_rut_benef: MyString
+  tipo_causa: MyString
+  tamano_causa: MyString
+  fecha_ingreso_causa: 2022-07-01
+
+two:
+  id_causa: 1
+  rut_beneficiario: 1
+  dv_rut_person: MyString
+  nombre_causa: MyString
+  descripcion: MyText
+  fundacion_u_ong_relacionada: MyString
+  asesor_asignado: MyString
+  puntaje_causa: 1
+  rut_beneficiario_causa: 1
+  dv_rut_benef: MyString
+  tipo_causa: MyString
+  tamano_causa: MyString
+  fecha_ingreso_causa: 2022-07-01

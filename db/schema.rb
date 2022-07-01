@@ -10,9 +10,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_07_01_230530) do
+ActiveRecord::Schema[7.0].define(version: 2022_07_01_232712) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "social_causes", force: :cascade do |t|
+    t.integer "id_causa"
+    t.integer "rut_beneficiario"
+    t.string "dv_rut_person"
+    t.string "nombre_causa"
+    t.text "descripcion"
+    t.string "fundacion_u_ong_relacionada"
+    t.string "asesor_asignado"
+    t.integer "puntaje_causa"
+    t.integer "rut_beneficiario_causa"
+    t.string "dv_rut_benef"
+    t.string "tipo_causa"
+    t.string "tamano_causa"
+    t.date "fecha_ingreso_causa"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "name"
