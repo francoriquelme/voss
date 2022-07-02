@@ -1,0 +1,57 @@
+<%= form_with(model: challenge) do |form| %>
+  <% if challenge.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(challenge.errors.count, "error") %> prohibited this challenge from being saved:</h2>
+
+      <ul>
+        <% challenge.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :id_desafio, style: "display: block" %>
+    <%= form.number_field :id_desafio %>
+  </div>
+
+  <div>
+    <%= form.label :rut_person, style: "display: block" %>
+    <%= form.number_field :rut_person %>
+  </div>
+
+  <div>
+    <%= form.label :dv_rut_person, style: "display: block" %>
+    <%= form.text_field :dv_rut_person %>
+  </div>
+
+  <div>
+    <%= form.label :id_causa, style: "display: block" %>
+    <%= form.number_field :id_causa %>
+  </div>
+
+  <div>
+    <%= form.label :puntaje_causas, style: "display: block" %>
+    <%= form.number_field :puntaje_causas %>
+  </div>
+
+  <div>
+    <%= form.label :fecha_inicio, style: "display: block" %>
+    <%= form.date_field :fecha_inicio %>
+  </div>
+
+  <div>
+    <%= form.label :fecha_termino, style: "display: block" %>
+    <%= form.date_field :fecha_termino %>
+  </div>
+
+  <div>
+    <%= form.label :comentarios, style: "display: block" %>
+    <%= form.text_area :comentarios %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

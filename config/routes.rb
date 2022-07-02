@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :challenges
+  resources :financial_states
   resources :deuda_users
   resources :social_causes
   resources :users

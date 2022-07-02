@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  estado_financiero: MyString
+  rut_person: 1
+  dv_rut_person: MyString
+  renta_mensual: 1
+  pago_mensual_total: 1
+  monto_deuda_total: 1
+  fecha_actualizacion: 2022-07-01
+
+two:
+  estado_financiero: MyString
+  rut_person: 1
+  dv_rut_person: MyString
+  renta_mensual: 1
+  pago_mensual_total: 1
+  monto_deuda_total: 1
+  fecha_actualizacion: 2022-07-01

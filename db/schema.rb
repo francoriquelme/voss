@@ -10,9 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_07_02_000438) do
+ActiveRecord::Schema[7.0].define(version: 2022_07_02_003230) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "challenges", force: :cascade do |t|
+    t.integer "id_desafio"
+    t.integer "rut_person"
+    t.string "dv_rut_person"
+    t.integer "id_causa"
+    t.integer "puntaje_causas"
+    t.date "fecha_inicio"
+    t.date "fecha_termino"
+    t.text "comentarios"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "deuda_users", force: :cascade do |t|
     t.integer "rut_person"
@@ -24,6 +37,18 @@ ActiveRecord::Schema[7.0].define(version: 2022_07_02_000438) do
     t.integer "meses_sin_pago_1"
     t.integer "pago_mensual_total"
     t.integer "monto_deuda_total"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "financial_states", force: :cascade do |t|
+    t.string "estado_financiero"
+    t.integer "rut_person"
+    t.string "dv_rut_person"
+    t.integer "renta_mensual"
+    t.integer "pago_mensual_total"
+    t.integer "monto_deuda_total"
+    t.date "fecha_actualizacion"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

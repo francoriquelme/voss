@@ -1,0 +1,52 @@
+<%= form_with(model: financial_state) do |form| %>
+  <% if financial_state.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(financial_state.errors.count, "error") %> prohibited this financial_state from being saved:</h2>
+
+      <ul>
+        <% financial_state.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :estado_financiero, style: "display: block" %>
+    <%= form.text_field :estado_financiero %>
+  </div>
+
+  <div>
+    <%= form.label :rut_person, style: "display: block" %>
+    <%= form.number_field :rut_person %>
+  </div>
+
+  <div>
+    <%= form.label :dv_rut_person, style: "display: block" %>
+    <%= form.text_field :dv_rut_person %>
+  </div>
+
+  <div>
+    <%= form.label :renta_mensual, style: "display: block" %>
+    <%= form.number_field :renta_mensual %>
+  </div>
+
+  <div>
+    <%= form.label :pago_mensual_total, style: "display: block" %>
+    <%= form.number_field :pago_mensual_total %>
+  </div>
+
+  <div>
+    <%= form.label :monto_deuda_total, style: "display: block" %>
+    <%= form.number_field :monto_deuda_total %>
+  </div>
+
+  <div>
+    <%= form.label :fecha_actualizacion, style: "display: block" %>
+    <%= form.date_field :fecha_actualizacion %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
