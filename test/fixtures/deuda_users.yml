@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  rut_person: 1
+  dv_rut_person: MyString
+  institucion_1: MyString
+  tipo_deuda_1: MyString
+  monto_deuda_1: 1
+  pago_mensual_1: 1
+  meses_sin_pago_1: 1
+  pago_mensual_total: 1
+  monto_deuda_total: 1
+
+two:
+  rut_person: 1
+  dv_rut_person: MyString
+  institucion_1: MyString
+  tipo_deuda_1: MyString
+  monto_deuda_1: 1
+  pago_mensual_1: 1
+  meses_sin_pago_1: 1
+  pago_mensual_total: 1
+  monto_deuda_total: 1

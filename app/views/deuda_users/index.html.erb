@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Deuda users</h1>
+
+<div id="deuda_users">
+  <% @deuda_users.each do |deuda_user| %>
+    <%= render deuda_user %>
+    <p>
+      <%= link_to "Show this deuda user", deuda_user %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New deuda user", new_deuda_user_path %>

@@ -1,0 +1,2 @@
+class DeudaUser < ApplicationRecord
+end

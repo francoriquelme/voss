@@ -10,9 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_07_01_232712) do
+ActiveRecord::Schema[7.0].define(version: 2022_07_02_000438) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "deuda_users", force: :cascade do |t|
+    t.integer "rut_person"
+    t.string "dv_rut_person"
+    t.string "institucion_1"
+    t.string "tipo_deuda_1"
+    t.integer "monto_deuda_1"
+    t.integer "pago_mensual_1"
+    t.integer "meses_sin_pago_1"
+    t.integer "pago_mensual_total"
+    t.integer "monto_deuda_total"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "social_causes", force: :cascade do |t|
     t.integer "id_causa"
