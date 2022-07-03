@@ -6,6 +6,9 @@ ruby "3.1.2"
 # Sirve para ver los campos de mi base de datos
 gem "annotate"
 
+# Kaminari
+gem "kaminari"
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.3"
 
