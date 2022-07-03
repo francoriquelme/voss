@@ -8,18 +8,18 @@ class CreateUsers < ActiveRecord::Migration[7.0]
       t.string :direccion
       t.string :comuna
       t.string :region
-      t.string :telefono
+      t.integer :telefono
       t.string :email
       t.string :profesion_u_oficio
       t.string :renta_mensual
-      t.string :rut
+      t.integer :rut
       t.string :dv_rut_person
-      t.string :rut_empleador
+      t.integer :rut_empleador
       t.string :dv_rut_emp
       t.string :empleador
       t.string :desafios_en_curso
       t.string :estado_financiero
-      t.string :id_desafio
+      t.integer :id_desafio
 
       t.timestamps
     end
