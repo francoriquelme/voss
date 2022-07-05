@@ -1,12 +1,11 @@
 Rails.application.routes.draw do
-  resources :challenges
-  resources :financial_states
-  resources :deuda_users
-  resources :social_causes
-  resources :users
-  root "users#index"
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
+  devise_for :users
+  devise_for :admins
+  get "home/index"
+  root to: "home#index"
+  authenticate :admin do
+    resources :social_causes
+    resources :deuda_users
+  end
+  resource :cart, only: [:show, :update]
 end
